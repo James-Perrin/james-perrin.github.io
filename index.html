@@ -1,1 +1,84 @@
-"Hello World" 
+<html>
+    <title>James Perrin</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <head>
+        <div class="header">
+            User Interface Survey
+        </div>
+    </head>
+    <body>
+        <div class="page-wrap">
+            <div class="main">
+                <div>
+                    <a href="https://www.google.com/">
+                        <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Google-Image-Search-796x417.jpg" class="frame" alt="google">
+                        <p style="text-align: right; margin-right: 20%; margin-top: 0px;">
+                            Link to site
+                        </p>
+                    </a>
+                </div>
+                <form>
+                    <div class="question" style="margin-top: 0px!important;">
+                        How did you hear about the webstie?
+                        <div style="margin-left: 10px; margin-top: 5px;">
+                            <textarea style="width: 50%;" multiline="true" placeholder="How did you hear about the webstie?"></textarea>
+                        </div>
+                    </div>
+                    <div class="question">
+                        How often do you vist this webstie? 
+                        <select id="frequency">
+                            <option value="0">Select</option>
+                            <option value="1">Less than once a day</option>
+                            <option value="2">1 - 4 times a day</option>
+                            <option value="3">5 - 10 times a day</option>
+                            <option value="4">10+ times a day</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        The website has a clear purpose: 
+                        <input type="radio" name="single" value="True">
+                        <label for="True">True</label>
+                        <input type="radio" name="single" value="False">
+                        <label for="False">False</label>
+                    </div>
+                    <div class="question">
+                        What quick links in the navbar do you use?
+                        <input type="checkbox" value="Gmail" selected=false>
+                        <label for="Gmail">Gmail</label>
+                        <input type="checkbox"  value="Images">
+                        <label for="Images">Images</label>
+                        <input type="checkbox"  value="About">
+                        <label for="About">About</label>
+                        <input type="checkbox" value="Store">
+                        <label for="Store">Store</label>
+                        <input type="checkbox"  value="YouTube">
+                        <label for="YouTube">YouTube</label>
+                    </div>
+                    <div class="question">
+                        The Nav bar should have links to every google website
+                        <input type="radio" name="feel">
+                        <label>strongly agree</label>
+                        <input type="radio" name="feel">
+                        <label>agree</label>
+                        <input type="radio" name="feel">
+                        <label>disagree</label>
+                        <input type="radio" name="feel">
+                        <label>strongly disagree</label>
+                    </div>
+                    <div class="question">
+                        Additional Comments
+                        <div style="margin-left: 10px; margin-top: 5px;">
+                            <textarea style="width: 50%;" multiline="true" placeholder="Additional Comments"></textarea>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <button>Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="footer">
+                <h6 style="margin-right: 20%;">Designed by James Perrin</h6>
+            </div>
+        </div>
+    </body>
+</html>
