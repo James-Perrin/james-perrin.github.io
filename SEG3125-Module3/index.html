@@ -18,20 +18,19 @@
 <!-- Tab content -->
 <div id="Client" class="tabcontent">
   <p>Tell us a bit about you.</p>
-	Choose a diet type:
-	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
-	<option value=""></option>
-	<option value="Vegetarian">Vegetarian</option>
-  <option value="GlutenFree">Gluten Free</option>
-  <option value="Organic">Organic</option>
-  <option value="Vegetarian && GlutenFree">Vegetarian && GlutenFree</option>
-  <option value="None">Any</option>
-	</select>
+	Choose a diet restrictions:
+  <br>
+  <input type="radio" id="Vegetarian" name="dietSelect" value="Vegetarian" onchange="populateListProductChoices(this.id, 'displayProduct')"><label for="Vegetarian">Vegetarian</label><br>
+  <input type="radio" id="GlutenFree" name="dietSelect" value="GlutenFree" onchange="populateListProductChoices(this.id, 'displayProduct')"><label for="GlutenFree">Gluten Free</label><br>
+  <input type="radio" id="Organic" name="dietSelect" value="Organic" onchange="populateListProductChoices(this.id, 'displayProduct')"><label for="Organic">Organic</label><br>
+  <input type="radio" id="Vegetarian && GlutenFree" name="dietSelect" value="Vegetarian && GlutenFree" onchange="populateListProductChoices(this.id, 'displayProduct')"><label for="Vegetarian && GlutenFree">Vegetarian && GlutenFree</label><br>
+  <input type="radio" id="None" name="dietSelect" value="None"><label for="None" onchange="populateListProductChoices(this.id, 'displayProduct')">None</label><br>
+
 </div>
 
 <div id="Products" class="tabcontent">
   <h3>Your targeted products</h3>
-	 Choose items to buy:
+	 Add items to cart:
 	 <div id="displayProduct"></div>
 	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
 		Add selected items to cart.

@@ -92,12 +92,12 @@ function selectedItems(){
 	let temp = orderProducts(chosenProducts);
 
 	for (i = 0; i < temp.length; i++) { 
-		para.appendChild(document.createTextNode(temp[i].name + " 			$" + temp[i].price));
+		para.appendChild(document.createTextNode(temp[i].name + " $" + temp[i].price));
 		para.appendChild(document.createElement("br"));
 	}
 
 	c.appendChild(para);
-	c.appendChild(document.createTextNode("Total Price is " + getTotalPrice(chosenProducts).toFixed(2)));
+	c.appendChild(document.createTextNode("Total Price $" + getTotalPrice(chosenProducts).toFixed(2)));
 		
 }
 

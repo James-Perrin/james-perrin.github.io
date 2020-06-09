@@ -107,9 +107,11 @@ function restrictListProducts(prods, restriction) {
 			product_info.push(prods[i]);
 		}
 		else if (restriction == "None"){
+			console.log("test123");
 			product_info.push(prods[i]);
 		}
 	}
+
 	return product_info;
 }
 
