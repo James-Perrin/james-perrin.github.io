@@ -17,22 +17,20 @@
 
 <!-- Tab content -->
 <div id="Client" class="tabcontent">
-  <h3>Client Information</h3>
   <p>Tell us a bit about you.</p>
-	Choose a Category:
+	Choose a diet type:
 	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
 	<option value=""></option>
 	<option value="Vegetarian">Vegetarian</option>
-  <option value="GlutenFree">GlutenFree</option>
+  <option value="GlutenFree">Gluten Free</option>
   <option value="Organic">Organic</option>
   <option value="Vegetarian && GlutenFree">Vegetarian && GlutenFree</option>
-  <option value="None">None</option>
+  <option value="None">Any</option>
 	</select>
 </div>
 
 <div id="Products" class="tabcontent">
   <h3>Your targeted products</h3>
-  <p>We preselected products based on your restrictions.</p>
 	 Choose items to buy:
 	 <div id="displayProduct"></div>
 	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
@@ -42,7 +40,6 @@
 
 <div id="Cart" class="tabcontent">
   <h3>Cart</h3>
-  <p>Here is your cart.</p>
   <div id="displayCart"></div>
 </div>
 

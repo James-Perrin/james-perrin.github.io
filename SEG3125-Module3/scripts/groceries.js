@@ -8,70 +8,80 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
-		price: 1.99
+		price: 1.99,
+		src: "https://natural.news/wp-content/uploads/sites/21/2019/02/Brocoli-Broccoli-Isolated-Vegetable-Background-Food-Healthy.jpg"
 	},
 	{
 		name: "bread",
 		vegetarian: true,
 		glutenFree: false,
 		organic: true,
-		price: 2.35
+		price: 2.35,
+		src: "https://iheartrecipes.com/wp-content/uploads/2015/03/IMG_95911.jpg"
 	},
 	{
 		name: "salmon",
 		vegetarian: false,
 		glutenFree: true,
 		organic: false,
-		price: 10.00
+		price: 10.00,
+		src: "https://www.seriouseats.com/recipes/images/2016/08/20160826-sous-vide-salmon-46-1500x1125.jpg"
 	},
 	{
 		name: "chicken",
 		vegetarian: false,
 		glutenFree: true,
 		organic: false,
-		price: 13.00
+		price: 13.00,
+		src: "https://foodsafetynewsfullservice.marlersites.com/files/2013/10/raw-chicken-breasts-406-2.jpg"
 	},
 	{
 		name: "steak",
 		vegetarian: false,
 		glutenFree: true,
 		organic: false,
-		price: 17.00
+		price: 17.00,
+		src: "http://4.bp.blogspot.com/_koA1FM1bZ5M/TFgldHI1RaI/AAAAAAAAA2I/TVwYoxxWRWA/s1600/twi+baked+pot+grilled+steak+009.JPG"
 	},
 	{
 		name: "almonds",
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
-		price: 10.00
+		price: 10.00,
+		src: "https://servingjoy.com/wp-content/uploads/2014/12/Almonds-in-brown-wooden-basket.jpg"
 	},
 	{
 		name: "cereal",
 		vegetarian: true,
 		glutenFree: false,
 		organic: true,
-		price: 6.00
+		price: 6.00,
+		src: "https://www.rd.com/wp-content/uploads/2016/08/01_eating_cereal_3_meals_bhofack2.jpg"
 	},
 	{
 		name: "milk",
 		vegetarian: true,
 		glutenFree: true,
 		organic: false,
-		price: 4.00
+		price: 4.00,
+		src: "https://www.wonderwardrobes.com/wp-content/uploads/2015/12/milk.jpg"
 	},
 	{
 		name: "vegie burger",
 		vegetarian: true,
 		glutenFree: true,
 		organic: false,
-		price: 11.00
+		price: 11.00,
+		src: "https://howtofeedaloon.com/wp-content/uploads/2016/06/veggie-burger-gawker-2.jpg"
 	},
 	{
 		name: "cheese",
 		vegetarian: true,
 		glutenFree: true,
 		organic: false,
-		price: 7.00
+		price: 7.00,
+		src: "https://cms.splendidtable.org/sites/default/files/styles/w2000/public/470340853.jpg?itok=Vu-VD1UP"
 	}
 
 ];
