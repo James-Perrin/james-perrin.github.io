@@ -1,0 +1,174 @@
+<!-- This file contains many elements adapted from the online tutoral -->
+<!-- on Bootstrap 4 as found here: https://www.w3schools.com/bootstrap4/default.asp -->
+
+<!-- Images source: -->
+<!-- jule.jpg taken from https://www.freepik.com/premium-vector/cartoon-successful-hairdresser_3951066.htm -->
+<!-- Erwind.jpb https://www.kijiji.ca/v-construction-trades-jobs/winnipeg/bicycle-mechanic/1499188319 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The head should contain an appropriate title for your site -->
+<head>
+    <title>Wheel'n Deal'n</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+    <div class="container-md p-3 my-3 border bg-dark text-white">
+        <h1>Wheel'n Deal'n</h1>
+        <p>Anything With Wheels we can help!</p>
+        <p>202 Kingston Rd, Pickering, ON, Canada</p>
+    </div>
+
+    <div class="container">
+        <img src="images/bike-action.jpg">
+    </div>
+
+    <div class="container-md p-3 my-3 border bg-light text-dark">
+        <h3>We can do everything on wheels!</h3>
+        <p>Anything you need regarding bikes, motorcycles, cars, Anything! We can help</p>
+    </div>
+
+    <div class="container">
+        <h2>Services</h2>
+        <table class="table table-dark">
+            <thead>
+            <tr>
+                <th>Price</th>
+                <th>Service</th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>$30</td>
+                <td>Bicycle Tire Change</td>
+                <td>New bicycle tire & inner tube insallation</td>
+            </tr>
+            <tr>
+                <td>$90</td>
+                <td>Basic Motorcycle maintenance</td>
+                <td>Basic Motorcycle cleaning and tuning</td>
+            </tr>
+            <tr>
+                <td>$140</td>
+                <td>Basic Plus Motorcycle maintenance</td>
+                <td>Basic Motorcycle cleaning and tuning & gear optimization</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container p-3">
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseService">Choose a service</a>
+                </div>
+                <div id="collapseService" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Here is our list of services</p>
+                        <input type="radio" ><label for="Tire Installation"> $30 Tire Installation</label><br>
+                        <input type="radio" ><label for="Basic Bike Maintenance"> $90 Basic Bike Maintenance</label><br>
+                        <input type="radio" ><label for="Basic Plus Bike Maintenance"> $140 Basic Plus Bike Maintenance</label><br>
+                    </div>
+                </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseDate">Choose a date</a>
+                </div>
+                <div id="collapseDate" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Select a Date</p>
+                        <div class="form-group row">
+                            <label for="dateTimeInput" class="col-2 col-form-label">Date and time</label>
+                            <div class="col-10">
+                                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="dateTimeInput">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Your info</a>
+                </div>
+                <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Your information so we can contact you</p>
+                        <p>Enter your email</p>
+                        <input type="text" name="email" id="email">
+                        <button type="button" class="btn btn-info btn-small">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container p-3">
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#mySurvey">Give a Review!</button>
+          
+        <!-- Modal -->
+        <div class="modal fade" id="mySurvey" role="dialog">
+            <div class="modal-dialog">  
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <h3>How was your experience with us?</h3>
+                        <form>
+                          <textarea name="feedback" id="feedback" cols="40" rows="10"></textarea>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
+                </div>
+            </div>     
+        </div>
+        </div>    
+    </div>
+
+    <div class="container p-3">
+        <h2>Meet our Mechanics!</h2>
+        <div class="card-columns">
+            <div class="card" style="width:300px">
+                <img class="card-img-top" src="images/Erwind.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Bobby</h4>
+                    <p class="card-text">Bicycle EXPERT! Knows everything there is regarding bike maintenance</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+            <div class="card" style="width:300px">
+                <img class="card-img-top" src="images/Erwind.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Willy</h4>
+                    <p class="card-text">"This guy knows whats up" - every customer</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+            <div class="card" style="width:300px">
+                <img class="card-img-top" src="images/Erwind.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Dave</h4>
+                    <p class="card-text">Motorcycle EXPERT! Knows everything there is regarding Motorcycle maintenance</p>
+                    <a href="#" class="btn btn-primary" data-toggle="collapse">See Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
