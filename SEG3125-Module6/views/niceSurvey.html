@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <title>Questionnaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+  </head>
+  
+  <body>
+	
+	<div class="container-md p-3 my-3 border text-black" id="survey">
+    <div class="bg-dark text-white" style="padding: 10px; border-radius: 5px 5px 0px 0px;">
+      <div style="text-align: center; font-size: 36px;">User Interface Survey</div>
+    </div>
+    <div class="bg-white" style="padding: 10px; border-radius: 0px 0px 5px 5px;">
+      <a href="https://www.google.com/">
+        <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Google-Image-Search-796x417.jpg" style="width: 60%; margin-right: 20%; margin-left: 20%;" class="frame" alt="google">
+        <p style="text-align: right; margin-right: 20%; margin-top: 0px;">
+            Link to site
+        </p>
+      </a>
+      <form>
+        <div class="bg-white text-black border" style="padding: 10px; border-radius: 5px 5px 0px 0px;">
+            <h3>How did you hear about the webstie?</h3>
+            <div style="margin-left: 10px; margin-top: 5px;">
+                <textarea style="width: 50%;" multiline="true" placeholder="How did you hear about the webstie?" name="hear"></textarea>
+            </div>
+        </div>
+          <div class="bg-white text-black border" style="padding: 10px;">
+            <h3>How often do you vist this webstie? </h3 >
+              <select name="frequency">
+                  <option name="frequency" value="0">Select</option>
+                  <option name="frequency" value="1>">Less than once a day</option>
+                  <option name="frequency" value="1-4">1 - 4 times a day</option>
+                  <option name="frequency" value="5-10">5 - 10 times a day</option>
+                  <option name="frequency" value="10+">10+ times a day</option>
+              </select>
+          </div>
+
+          <div class="bg-white text-black border" style="padding: 10px;">
+            <h2>The website has a clear purpose:</h2>
+            <input type="radio" name="single" value="True">
+            <label for="True">True</label>
+            <input type="radio" name="single" value="False">
+            <label for="False">False</label>
+          </div>
+
+          <div class="bg-white text-black border" style="padding: 10px;">
+            <h2>What quick links in the navbar do you use?</h2>
+            <input type="checkbox" name="links" value="Gmail" selected=false>
+            <label for="Gmail">Gmail</label>
+            <input type="checkbox" name="links" value="Images">
+            <label for="Images">Images</label>
+            <input type="checkbox" name="links" value="About">
+            <label for="About">About</label>
+            <input type="checkbox" name="links" value="Store">
+            <label for="Store">Store</label>
+            <input type="checkbox" name="links" value="YouTube">
+            <label for="YouTube">YouTube</label>
+          </div>
+
+          <div class="bg-white text-black border" style="padding: 10px;">
+            <h2>The Nav bar should have links to every google website</h2>
+            <input type="radio" name="feel" value="strongly agree">
+            <label>strongly agree</label>
+            <input type="radio" name="feel" value="agree">
+            <label>agree</label>
+            <input type="radio" name="feel" value="disagree">
+            <label>disagree</label>
+            <input type="radio" name="feel" value="strongly disagree">
+            <label>strongly disagree</label>
+          </div>
+          
+          <div class="bg-white text-black border" style="padding: 10px; border-radius: 0px 0px 5px 5px;">
+            <h2>Additional Comments</h2>
+            <div style="margin-left: 10px; margin-top: 5px;">
+                <textarea style="width: 50%;" multiline="true" placeholder="Additional Comments" name="additional"></textarea>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-warning" id="bb">Submit</button>
+            <p id="thanks"></p> 
+          </div>
+      </form>
+    </div>
+    </div>
+	<script src="/assets/action.js"></script>
+  </body>
+</html> 
