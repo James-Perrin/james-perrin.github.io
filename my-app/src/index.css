@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.main {
+  width: 100vw;
+  height: 90vh;
+}
+
+.NavIcon {
+  margin: 5px;
+}
+
+.viewButton {
+  position: absolute!important;
+  margin: 50px!important;
+}
+
+.rateButton {
+  position: absolute!important;
+  margin: 50px 0px 50px 80vw;
+}
+
+.singleRateFab {
+  margin: 5px!important;
+  font-size: 24px!important;
+}
+
+.singleFab {
+  margin: 5px!important;
+}
+
+.FabRateHeader {
+  margin-left: 45px!important;
+  font-weight: bold;
+}
+
+.FabHeader {
+  margin-left: 70px!important;
+  font-weight: bold;
+}
+
+.green {
+  background-color: lightgreen!important;
+}
+
+.red {
+  background-color: red!important;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.controlButton {
+  position: absolute!important;
+  margin-top: 80vh;
+}
+
+.singleControlFab {
+  margin: 5px!important;
+  font-size: 32px!important;
+}
+
+.languageButton {
+  position: absolute;
+  margin: 85vh 0px 0px 95vw;
+}
+
+.languageChangeFab {
+  margin: 5px!important;
+  font-size: 32px!important;
+}
+
+
